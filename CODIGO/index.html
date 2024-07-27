@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>GITHUB</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>GITHUB USER STATISTICS</h1>
+            <form id="githubForm">
+                <input type="text" id="githubUsername" placeholder="Enter GitHub Username" required>
+                <button type="submit">GERAR</button>
+            </form>
+        </div>
+        <div id="charts" class="chart-box">
+            <div class="chart-container">
+                <canvas id="barChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="pieChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
